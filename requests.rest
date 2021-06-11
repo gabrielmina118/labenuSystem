@@ -1,0 +1,35 @@
+PUT http://localhost:3003/turma
+Content-Type: application/json
+
+{
+   "nome": "Cruz",
+   "data_inicio":"2020-01-25",
+   "data_final":"2020-06-25"
+}
+
+###
+
+PUT http://localhost:3003/estudante
+Content-Type: application/json
+
+{
+   "nome": "Astro",
+   "email":"astro@gmail.com",
+   "data_nasc":"1990-09-10",
+   "turma_id": 1
+}
+
+###
+
+PUT http://localhost:3003/docente
+Content-Type: application/json
+
+{
+   "nome": "gabriel",
+   "email":"gabriel@gmail.com",
+   "data_nasc":"1900-05-30"
+}
+
+###
+
+GET http://localhost:3003/estudante/1
